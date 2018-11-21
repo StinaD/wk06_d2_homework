@@ -85,7 +85,7 @@ describe('Park', function() {
 
   it('should return object with dinosaur diet info', function(){
     const actual = park.dinosaurDietInfo();
-    assert.strictEqual(actual, {'carnivore': 1, 'omnivore': 1, 'herbivore': 0});
+    assert.deepStrictEqual(actual, {'Omnivore': 1, 'Carnivore': 1, 'Herbivore': 0});
   });
 
 });

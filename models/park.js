@@ -84,9 +84,9 @@ Park.prototype.removeBySpecies = function(type){
 
 
 Park.prototype.dinosaurDietInfo = function(){
-  let diet = {'carnivore': 0, 'omnivore': 0, 'herbivore': 0};
+  let diet = {'Omnivore': 0, 'Carnivore': 0, 'Herbivore': 0};
   for (const dinosaur of this.dinosaurs) {
-    diet[dinosaur.diet] = diet[dinosaur.diet] + 1;
+      diet[dinosaur.diet] +=1;
   };
   return diet;
 };
